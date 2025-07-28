@@ -68,4 +68,4 @@ Siga-nos para promoções, novidades e dicas sobre Porto de Galinhas!
 
 ---
 
-© 2023-2024 **Apartamento 10**. Todos os direitos reservados.
+© 2025 **Apartamento 10**. Todos os direitos reservados.

@@ -8,11 +8,11 @@
     --light-color: #ecf0f1;
     --text-color: #34495e;
     --text-light: #7f8c8d;
-    
+
     /* Efeitos */
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease-in-out;
-    
+
     /* Bordas */
     --border-radius: 8px;
     --border-radius-lg: 12px;
@@ -30,7 +30,12 @@ body {
 }
 
 /* Hierarquia de títulos com fallback seguro */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -38,12 +43,29 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--dark-color);
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
 
 /* Sistema de Ícones Universal */
 .icon {
@@ -54,19 +76,50 @@ h6 { font-size: 1rem; }
 }
 
 /* Tamanhos de ícones */
-.icon-xs { font-size: 0.75rem; }
-.icon-sm { font-size: 1rem; }
-.icon-md { font-size: 1.5rem; }
-.icon-lg { font-size: 2rem; }
-.icon-xl { font-size: 2.5rem; }
-.icon-xxl { font-size: 3rem; }
+.icon-xs {
+    font-size: 0.75rem;
+}
+
+.icon-sm {
+    font-size: 1rem;
+}
+
+.icon-md {
+    font-size: 1.5rem;
+}
+
+.icon-lg {
+    font-size: 2rem;
+}
+
+.icon-xl {
+    font-size: 2.5rem;
+}
+
+.icon-xxl {
+    font-size: 3rem;
+}
 
 /* Cores de ícones */
-.icon-primary { color: var(--primary-color); }
-.icon-secondary { color: var(--secondary-color); }
-.icon-accent { color: var(--accent-color); }
-.icon-light { color: var(--light-color); }
-.icon-dark { color: var(--dark-color); }
+.icon-primary {
+    color: var(--primary-color);
+}
+
+.icon-secondary {
+    color: var(--secondary-color);
+}
+
+.icon-accent {
+    color: var(--accent-color);
+}
+
+.icon-light {
+    color: var(--light-color);
+}
+
+.icon-dark {
+    color: var(--dark-color);
+}
 
 /* Efeitos de ícones */
 .icon-gradient {
@@ -79,14 +132,15 @@ h6 { font-size: 1rem; }
 .icon-hover-scale {
     transition: transform var(--transition);
 }
+
 .icon-hover-scale:hover {
     transform: scale(1.2);
 }
 
 /* Hero Section Aprimorada */
 .hero-section {
-    background: linear-gradient(135deg, rgba(44, 62, 80, 0.85) 0%, rgba(52, 152, 219, 0.6) 100%), 
-                url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.85) 0%, rgba(52, 152, 219, 0.6) 100%),
+        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -202,9 +256,14 @@ h6 { font-size: 1rem; }
 
 /* Responsividade */
 @media (max-width: 992px) {
-    h1 { font-size: 2.25rem; }
-    h2 { font-size: 1.75rem; }
-    
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
     .hero-section {
         padding: 8rem 0 6rem;
         background-attachment: scroll;
@@ -212,13 +271,18 @@ h6 { font-size: 1rem; }
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
     .navbar-brand {
         font-size: 1.25rem;
     }
-    
+
     .feature-card {
         padding: 1.5rem;
     }
@@ -226,8 +290,13 @@ h6 { font-size: 1rem; }
 
 /* Animações */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
@@ -235,6 +304,7 @@ h6 { font-size: 1rem; }
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -246,6 +316,7 @@ h6 { font-size: 1rem; }
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -253,9 +324,17 @@ h6 { font-size: 1rem; }
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Hero Section Premium */
@@ -348,7 +427,8 @@ h6 { font-size: 1rem; }
 
 /* Cores principais */
 .footer-custom {
-    background: linear-gradient(to right, #003f63, #007b8a); /* Azul escuro + verde-mar */
+    background: linear-gradient(to right, #003f63, #007b8a);
+    /* Azul escuro + verde-mar */
     color: #ffffff;
     font-size: 0.95rem;
 }
@@ -360,7 +440,8 @@ h6 { font-size: 1rem; }
 }
 
 .footer-custom a:hover {
-    color: #b2f0e8; /* tom suave de água */
+    color: #b2f0e8;
+    /* tom suave de água */
 }
 
 /* Ícones sociais */
@@ -413,4 +494,23 @@ h6 { font-size: 1rem; }
 
 .text-link:hover {
     color: #ffffff;
+}
+
+/* CSS para fontes responsivas na hero-section */
+.hero-section h1 {
+    color: white !important;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .btn {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
