@@ -566,3 +566,22 @@ h6 {
 .navbar-nav .nav-link.active i {
     color: #fff;
 }
+
+/* CSS para fontes responsivas na hero-section */
+.hero-section h1 {
+    color: white !important;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .btn {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
